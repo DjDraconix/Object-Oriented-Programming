@@ -16,4 +16,13 @@ public class CheckingAccount extends Account {
 			System.out.println("Not enuff funds, overdraft is at " + overdraft);
 		}
 	}
+	
+	public void depositInChecking(double amount) {
+		setBallance(getBallance() + amount);
+	}
+	
+	public String toString() {
+		return "Acount Id: " + getId() + "\nDate Created: " + getDate() + 
+				"\nBallance: " + getBallance() + "\nOverdraft Alowance: " + overdraft;
+	}
 }
