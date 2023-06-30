@@ -1,6 +1,7 @@
 import java.time.format.DateTimeFormatter;  
-import java.time.LocalDateTime;    
-public class GeometricObject {
+import java.time.LocalDateTime;
+
+public abstract class GeometricObject {
 	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");  
 	LocalDateTime now = LocalDateTime.now();
 	
@@ -36,5 +37,12 @@ public class GeometricObject {
 	public String getDateCreated() {
 		return dateCreated;
 	}
+	
+	public String toString() {
+		return "Created on " + dateCreated + "\ncolor: " + color + " and filled: " + filled;
+	}
+	
+	public abstract double getPerimeter();
+	
+	public abstract double getArea();
 }
-
