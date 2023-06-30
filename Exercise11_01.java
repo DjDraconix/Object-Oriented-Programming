@@ -13,7 +13,7 @@ public class Exercise11_01 {
 		System.out.print("Is the triangle filled true/false: ");
 		boolean filled = in.nextBoolean();
 
-		Triangle user = new Triangle(s1, s2, s3);
+		Triangle user = new Triangle(s1, s2, s3, "", false);
 		user.setColor(color);
 		user.setFilled(filled);
 		

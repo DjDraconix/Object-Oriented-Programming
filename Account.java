@@ -25,7 +25,7 @@ public class Account {
 		return ballance;
 	}
 	
-	public void setballance(double newBallance) {
+	public void setBallance(double newBallance) {
 		ballance = newBallance;
 	}
 	
