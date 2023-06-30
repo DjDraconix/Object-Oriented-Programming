@@ -17,6 +17,8 @@ public class Exercise9_01 {
 					+"\nArea: " + areaF
 					+"\nPerimeter: " + perF);
 		}
+		
+		in.close();
 
 	}
 
