@@ -45,4 +45,8 @@ public abstract class GeometricObject {
 	public abstract double getPerimeter();
 	
 	public abstract double getArea();
+
+	public String howToColor() {
+		return null;
+	}
 }
