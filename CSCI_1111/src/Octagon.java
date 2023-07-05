@@ -1,6 +1,6 @@
 import java.lang.Cloneable;
 
-public class Octagon extends GeometricObject implements Comparable{
+public class Octagon extends GeometricObject implements Comparable<Object>, Cloneable{
 	double side = 1;
 	Octagon(double s1, String color, boolean filled) {
 		super(color, filled);
@@ -30,10 +30,28 @@ public class Octagon extends GeometricObject implements Comparable{
 
 	@Override
 	public int compareTo(Object o) {
-		// TODO Auto-generated method stub
-		return 0;
+		if (toString().equals(o.toString())) {
+			return 0;
+		} else {
+		return 1;
+		}
 	}
 
-	
+	@Override
+	public String toString() {
+		return "Created on " + dateCreated + "\ncolor: " + color + " and filled: " + filled
+				+ "\nSide length: " + side + "\nArea: " + getArea() + " and Perimeter: " + getPerimeter();
+	}
+
+	@Override
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+
+	@Override
+	public String howToColor() {
+		// TODO Auto-generated method stub
+		return "Color each side";
+	}
 
 }

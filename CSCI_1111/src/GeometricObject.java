@@ -38,15 +38,11 @@ public abstract class GeometricObject {
 		return dateCreated;
 	}
 	
-	public String toString() {
-		return "Created on " + dateCreated + "\ncolor: " + color + " and filled: " + filled;
-	}
+	public abstract String toString();
 	
 	public abstract double getPerimeter();
 	
 	public abstract double getArea();
 
-	public String howToColor() {
-		return null;
-	}
+	public abstract String howToColor();
 }
